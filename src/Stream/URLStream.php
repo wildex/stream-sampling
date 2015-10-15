@@ -34,8 +34,8 @@ class URLStream implements \IteratorAggregate
             throw new \Exception('Error accessing URL');
         }
 
-        while($value = fgets($pointer)){
-            yield $value;
+        while($value = fgets($pointer)) {
+            yield trim($value);
         }
 
         fclose($pointer);
