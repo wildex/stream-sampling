@@ -9,10 +9,10 @@ use org\bovigo\vfs\vfsStream;
 
 class URLStreamTest extends PHPUnit_Framework_TestCase
 {
-    public function testCall()
+    public function testEmptyCall()
     {
         $handle = vfsStream::newFile('handle')
-            ->withContent(FileContent)
+            ->withContent('')
             ->at(vfsStream::setup('root'));
 
         $iterator = new URLStream($handle->url());
@@ -20,5 +20,6 @@ class URLStreamTest extends PHPUnit_Framework_TestCase
         foreach ($iterator as $item) {
             $data[] = (int)$item;
         }
+        $this->assertEmpty($data);
     }
 }
