@@ -4,7 +4,7 @@ Uses Reservoir stream sampling algorithm (see links below)
 
 Can work with 3 different stream types:
 * STDIN input stream
-* Randommly generated stream
+* Randomly generated stream
 * Stream, aquired from URL
 
 -----
@@ -42,7 +42,7 @@ $ bin/sampling run --streamType URL --url https://www.random.org/integers/?num=1
 ```
 
 Example for STDIN run. For user interactive run you can type any amount of values
-and type exit, when you done. Or just pipe values from another app.
+and type "exit", when you done. Or just pipe values from another app.
 
 ```bash
 $ bin/sampling run --streamType STDIN
