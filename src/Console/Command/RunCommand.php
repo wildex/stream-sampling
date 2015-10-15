@@ -18,7 +18,7 @@ class RunCommand extends Command
 
     const DEFAULT_STREAM_TYPE   = 'RND';
 
-    const DEFAULT_SAMPLING_SIZE = 1000;
+    const DEFAULT_SAMPLING_SIZE = 10;
 
     private $streamTypes = [
         'RND',
