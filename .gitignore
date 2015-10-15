@@ -1,0 +1,6 @@
+# composer generated files
+composer.lock
+vendor
+bin/phpunit
+# IDE files
+.idea

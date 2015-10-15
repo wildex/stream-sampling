@@ -1,0 +1,25 @@
+{
+    "name": "wildex/stream-sampling",
+    "description": "A little stream sampling software. Can acquire streams from 3 different sources.",
+    "authors": [
+        {
+            "name": "Andrii Alieksieienko",
+            "email": "andrii.alieksieienko@gmail.com"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "5.0.*",
+        "phpunit/php-invoker": "*",
+        "mikey179/vfsStream": "1.6.0",
+        "symfony/console": "2.7.5"
+    },
+    "minimum-stability": "dev"
+}

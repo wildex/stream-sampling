@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Console\Command\RunCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$command = new RunCommand();
+
+$application->add($command);
+$application->setDefaultCommand($command->getName());
+$application->run();
