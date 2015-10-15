@@ -72,6 +72,8 @@ class RunCommand extends Command
 
         $result = $sampler->sample((int)$input->getOption('samplingSize'));
 
+        $output->writeln('Sampling result:');
+        $output->writeln(str_repeat('*', 10));
         $output->writeln($result);
     }
 }
