@@ -1,4 +1,4 @@
-## Console sampling tool
+## Console stream sampling tool
 
 Uses Reservoir stream sampling algorithm (see links below)
 
